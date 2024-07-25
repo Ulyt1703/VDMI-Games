@@ -95,7 +95,16 @@ function move(direction) {
         updateBoard()
         if (!canMove()) {
             setTimeout(function(){
-                alert('Гра закінчена!')
+                class gameOverText{
+                    constructor(description){
+                        this.description = description
+                    }
+                    getAlert(){
+                        alert(this.description)
+                    }
+                }
+                let finalText = new gameOverText("Гра закінчена!")
+                finalText.getAlert()
             },1000)
         }
     }

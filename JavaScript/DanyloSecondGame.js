@@ -33,9 +33,9 @@ let startButton = document.querySelector(".start-button")
 let timeElement = document.querySelector(".time")
 
 let levels = [
-    { level: "Level 1", text: "I have a dog!" },
-    { level: "Level 2", text: "Are you ready for the hard level?" },
-    { level: "Level 3", text: "I cAn wriTe thIs!" }
+    { level: "Level 1", text: "Writer" },
+    { level: "Level 2", text: "Animals can not talk to people!" },
+    { level: "Level 3", text: "Slowing down breathing Helps to caLm down." }
 ]
 
 let [
@@ -109,7 +109,7 @@ function startGame(){
             gameInput.focus()
         }
     })
-    timeElement.innerText = "40"
+    timeElement.innerText = "35"
     gameInput.style.opacity = "1"
     finishedButton.style.opacity = "1"
     finishedButton.style.zIndex = '1'
@@ -165,9 +165,10 @@ function checkInput(){
         errorCount += mistakes
         errorElement.innerHTML = `Mistakes: ${errorCount}`
 } 
-    else if(errorCount = 6){
+    else if(mistakes > 5){
         errorCount += mistakes
         errorElement.innerHTML = `Mistakes: ${errorCount}`
+        loadLevel(currentLevel = 0)
         modalGameOver.style.top = '50%'
         modalGameOver.style.zIndex = '9999'
         setTimeout(function(){
@@ -177,7 +178,6 @@ function checkInput(){
         textModalGameOver.innerText = "You lost! That's too many mistakes! Page reloads!"
         gameInput.focus()
         gameInput.value = ""
-        loadLevel(currentLevel = 0)
         timeElement.innerText = "39487488484849299392933839399392929299337746464378838383888282"
         timeElement.style.display = 'none'
         levelText.style.opacity = '1'

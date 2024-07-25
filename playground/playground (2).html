@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Pixelify+Sans&family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="./playground.css">
+</head>
+<body>
+    <div class="loading">
+        <h1 class="title__loading-developers">Developed by: Vlad, Danylo, <br> Mykhailo, Ilya</h1>
+        <h1 class="title__loading-copyright">Copyright © 2024 VDMI Games. <br> All rights reserved</h1>
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Level 1: Color Match -->
+<div class="level" id="level-1">
+    <h2 class="loads">Level 1</h2>
+    <p class="quest-txt">What are we learning now?</p>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/Z2kv.gif" alt="" class="example-img">
+        </div>
+    </div>
+    <div class="squares-container">
+        <div class="square" id="square-1"><img class="js" src="../images/html.png" alt=""></div>
+        <div class="square" id="square-2"><img src="../images/Unofficial_JavaScript_logo_2.svg.png" alt="" class="js"></div>
+        <div class="square" id="square-3"><img src="../images/css.png" alt="" class="js"></div>
+        <div class="square" id="square-4"><img src="../images/SCSS-or-CSS.jpg.webp" alt="" class="scss"></div>
+        <div class="square" id="square-5"><img src="../images/Java.png" class="js" alt=""></div>
+    </div>
+</div>
+
+<!-- Level 2: Shape Order -->
+<div id="level-2" class="level">
+    <h2 class="loads">Level 2</h2>
+    <img src="" alt="" class="quest3">
+    <p class="quest-txt">Where is massive?</p>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/Rfuw.gif" alt="" class="example-img">
+        </div>
+    </div>
+    <div class="shapes-container">
+      <div class="shape square">
+        <img src="../images/level2-1.png" alt="" class="quest1">
+      </div>
+      <div class="shape square">
+        <img src="../images/level2-2.png" alt="" class="quest2">
+      </div>
+      <div class="shape square">
+        <img src="../images/level2-3.png" alt="" class="quest3">
+      </div>
+      <div class="shape square">
+        <img src="../images/level2-4.png" alt="" class="quest4">
+      </div>
+      <div class="shape square">
+        <img src="../images/level2-5.png" alt="" class="quest5">
+      </div>
+    </div>
+</div>
+<!-- Level 3: Click First Square -->
+<div class="level" id="level-3">
+    <h2 class="loads">Level 3</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/imagetop.png" alt="" class="example-img3">
+        </div>
+    </div>
+    <p class="quest-txt">What will "break" do?</p>
+    <div class="squares-container">
+        <div class="square correct" id="square-1">
+            <p class="stop-txt">Stop the code</p>
+        </div>
+        <div class="square incorrect" id="square-2">
+            <p class="stop-txt">Continue the code</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="stop-txt">Nothing</p>
+        </div>
+        <div class="square incorrect" id="square-4">
+            <p class="stop-txt">Add new number</p>
+        </div>
+        <div class="square incorrect" id="square-5">
+            <p class="stop-txt">I don't know</p>
+        </div>
+    </div>
+</div>
+
+<!-- Level 4: Click Fifth Square -->
+<div class="level" id="level-4">
+    <h2 class="loads">Level 4</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/while.png" alt="" class="example-img4">
+        </div>
+    </div>
+    <p class="quest-txt">What cycle is this?</p>
+    <div class="squares-container">
+        <div class="square incorrect" id="square-1">
+            <p class="while">do...while</p>
+        </div>
+        <div class="square incorrect" id="square-2">
+            <p class="while">ForEach()</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="while">For of</p>
+        </div>
+        <div class="square incorrect" id="square-4">
+            <p class="while">For</p>
+        </div>
+        <div class="square correct" id="square-5">
+            <p class="while">While</p>
+        </div>
+    </div>
+</div>
+
+<!-- Level 5 -->
+<div class="level" id="level-5">
+    <h2 class="loads">Level 5</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/continue.png" alt="" class="example-img5">
+        </div>
+    </div>
+    <p class="quest-txt">What numbers will console show?</p>
+    <div class="squares-container">
+        <div class="square incorrect" id="square-1">
+            <p class="while">Paired</p>
+        </div>
+        <div class="square correct" id="square-2">
+            <p class="while">Unpaired</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="while">All numbers</p>
+        </div>
+        <div class="square incorrect" id="square-4">
+            <p class="while1">0</p>
+        </div>
+        <div class="square incorrect" id="square-5">
+            <p class="while">All except 0</p>
+        </div>
+    </div>
+</div>
+  
+  <!-- Level 6 -->
+  <div class="level" id="level-6">
+    <h2 class="loads">Level 6</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/1MHb.gif" alt="" class="example-img6">
+        </div>
+    </div>
+    <p class="quest-txt">Where is object?</p>
+    <div class="squares-container">
+        <div class="square incorrect" id="square-1">
+            <img src="../images/level2-5.png" alt="" class="image6-1">
+        </div>
+        <div class="square incorrect" id="square-2">
+            <img src="../images/level2-4.png" alt="" class="image6-2">
+        </div>
+        <div class="square incorrect" id="square-3">
+            <img src="../images/level2-3.png" alt="" class="image6-3">
+        </div>
+        <div class="square incorrect" id="square-4">
+            <img src="../images/level2-2.png" alt="" class="image6-4">
+        </div>
+        <div class="square correct" id="square-5">
+            <img src="../images/level2-1.png" alt="" class="image6-5">
+        </div>
+    </div>
+</div>
+  <!-- Level 7 -->
+  <div class="level" id="level-7">
+    <h2 class="loads">Level 7</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/5Em.gif" alt="" class="example-img4">
+        </div>
+    </div>
+    <p class="quest-txt">What metohod "split" do?</p>
+    <div class="squares-container">
+        <div class="square incorrect" id="square-1">
+            <p class="while">I don't know</p>
+        </div>
+        <div class="square incorrect" id="square-2">
+            <p class="while">Adds new word</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="while">Makes the string colorful</p>
+        </div>
+        <div class="square incorrect" id="square-4">
+            <p class="while">Nothing</p>
+        </div>
+        <div class="square correct" id="square-5">
+            <p class="while7">Tears the sentence apart on each word
+            </p>
+        </div>
+    </div>
+</div>
+  
+  <!-- Level 8 -->
+  <div class="level" id="level-8">
+    <h2 class="loads">Level 8</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/indexof.png" alt="" class="example-img8">
+        </div>
+    </div>
+    <p class="quest-txt">What will be the index of Poly and Monkong?</p>
+    <div class="squares-container">
+        <div class="square incorrect" id="square-1">
+            <p class="while">3; 0</p>
+        </div>
+        <div class="square correct" id="square-2">
+            <p class="while">2; -1</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="while">3; -1</p>
+        </div>
+        <div class="square incorrect" id="square-4">
+            <p class="while">2; 0</p>
+        </div>
+        <div class="square correct" id="square-5">
+            <p class="while">-2; 0</p>
+        </div>
+    </div>
+</div>
+  
+  <!-- Level 9 -->
+  <div class="level" id="level-9">
+    <h2 class="loads">Level 9</h2>
+    <div class="flex">
+        <div class="example-square9">
+            <img src="../images/pasted image 0.png" alt="" class="example-img9">
+        </div>
+    </div>
+    <p class="quest-txt">What construction is this?</p>
+    <div class="squares-container">
+        <div class="square incorrect" id="square-1">
+            <p class="while">if</p>
+        </div>
+        <div class="square incorrect" id="square-2">
+            <p class="while">else if</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="while">else</p>
+        </div>
+        <div class="square correct" id="square-4">
+            <p class="while">switch</p>
+        </div>
+        <div class="square correct" id="square-5">
+            <p class="while">None of the variants</p>
+        </div>
+    </div>
+</div>
+  
+  <!-- Level 10 -->
+  <div class="level" id="level-10">
+    <h2 class="loads">Level 10</h2>
+    <div class="flex">
+        <div class="example-square">
+            <img src="../images/36u.gif" alt="" class="example-img4">
+        </div>
+    </div>
+    <p class="quest-txt">When the indexation starts?</p>
+    <div class="squares-container">
+        <div class="square correct" id="square-1">
+            <p class="while">From 0</p>
+        </div>
+        <div class="square incorrect" id="square-2">
+            <p class="while">From 1</p>
+        </div>
+        <div class="square incorrect" id="square-3">
+            <p class="while">From -1</p>
+        </div>
+        <div class="square incorrect" id="square-4">
+            <p class="while">From -10</p>
+        </div>
+        <div class="square correct" id="square-5">
+            <p class="while">From 10</p>
+        </div>
+    </div>
+</div>
+
+<!-- Level 11: Click to Win -->
+<div class="level" id="level-11">
+    <h2 class="loads">Level 11: Click to win</h2>
+    <div class="click-square" id="click-square"></div>
+</div>
+<button class="return"><a class="return-txt" href="../index.html">Go back</a></button>
+<!-- Result Messages -->
+<div class="result" id="win-message">You Won! Congratulations :)</div>
+
+    <div class="load">
+            
+    </div>
+    <script src="./playground.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

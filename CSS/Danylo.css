@@ -27,9 +27,6 @@ html::-webkit-scrollbar {
     background-color: #EE9B00;
     border-radius: 25px;
 }
-
-    html::-webkit-scrollbar-track {
-}
 .loading{
     position: absolute;
     height: 100vh;
@@ -42,6 +39,14 @@ html::-webkit-scrollbar {
 .loading.animation{
     opacity: 1;
     z-index: 9999;
+}
+.logo-loading{
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    -webkit-tap-highlight-color: transparent;
 }
 .title__loading-developers{
     position: relative;
@@ -159,6 +164,7 @@ html::-webkit-scrollbar {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .header__mobile{
     display: none;
@@ -392,6 +398,7 @@ html::-webkit-scrollbar {
 }
 .Container__second-game{
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .title__about__second-game{
     user-select: none;
@@ -418,7 +425,8 @@ html::-webkit-scrollbar {
     text-align: center; 
 }
 .Second__game-block{
-    width: 300px;
+    width: 280px;
+    height: 270px;
     display: block;
     margin: 0 auto;
     margin-top: 130px;
@@ -426,10 +434,11 @@ html::-webkit-scrollbar {
     transition: 0.4s;
 }
 .Second__game-block:hover{
-    transform: scale(1.01);
+    transform: scale(1.005);
 }
 .Second__game-img{
-    width: 300px;
+    width: 250px;
+    height: 180px;
 }
 .Second__game-title{
     padding: 30px 0 0 0;
@@ -564,6 +573,8 @@ html::-webkit-scrollbar {
         padding: 6px;
         color: #E9D8A6;
         font-size: 30px;
+        text-decoration: none;
+        text-decoration-style: none;
     }
     .nav > .menu > a:hover{
         color: #FFF;
@@ -610,9 +621,6 @@ html::-webkit-scrollbar {
         height: 80px;
         font-size: 37.5px;
     }
-    .Second__game-block{
-        margin-left: 37.5px;
-    }
 }
 @media(max-width: 575px){
     .footer{
@@ -627,7 +635,7 @@ html::-webkit-scrollbar {
 }
 @media(max-width: 532px){
     .container{
-        margin: 70px 0 0 0;
+        margin: 80px 0 0 0;
     }
     .grid-container{
         grid-template-columns: repeat(4, 65px);
@@ -648,7 +656,6 @@ html::-webkit-scrollbar {
     }
     .Second__game-block{
         width: 200px;
-        margin-left: 35px;
     }
     .Second__game-img{
         width: 200px;
@@ -666,10 +673,13 @@ html::-webkit-scrollbar {
     .loader{
         top: 50%;
     }
+    .logo-loading{
+        top: 22%;
+    }
 }
 @media(max-width: 407px){
     .container{
-        margin: 60px 0 0 0;
+        margin: 70px 0 0 0;
     }
     .grid-container{
         grid-template-columns: repeat(4, 55px);
@@ -709,7 +719,7 @@ html::-webkit-scrollbar {
 }
 @media(max-width: 359px){
     .container{
-        margin: 55px 0 0 0;
+        margin: 65px 0 0 0;
     }
     .grid-container{
         grid-template-columns: repeat(4, 50px);
@@ -736,7 +746,7 @@ html::-webkit-scrollbar {
 }
 @media(max-width: 313px){
     .container{
-        margin: 55px 0 0 0;
+        margin: 65px 0 0 0;
     }
     .grid-container{
         grid-template-columns: repeat(4, 55px);

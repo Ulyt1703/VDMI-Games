@@ -1,0 +1,109 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  background-image: url(...);
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+
+
+body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #27b500;
+}
+.radio-panel {
+  position: fixed;
+  top: 40%;
+  right: -400px;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  transition: right 0.5s;
+  transform: translateY(-50%);
+}
+.Radio001{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+/*   cursor: pointer; */
+}
+.Antena{
+  width: 55px;
+}
+.strelka-p{
+  width: 60px;
+  cursor: pointer;
+  position: absolute;
+  top: 290px;
+  right: 175px;
+}
+.strelka-q{
+  width: 60px;
+  cursor: pointer;
+  position: absolute;
+  top: 29px;
+  top: 290px;
+  right: 304px;
+}
+.radio-panel.visible {
+  right: 0;
+}
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  background: #cc0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  transform: translateY(-50%);
+}
+.toggle-button:hover {
+  background: #b50000;
+}
+#music{
+  transform: scale(0);
+}
+#moveImage {
+  position: relative;
+  transition: 0.8s;
+  margin: 100px 30px;
+  z-index: -1;
+  top: 0;
+}
+#container {
+  width: 195px;
+  height: 95px;
+  margin: 50px auto;
+  position: absolute;
+  top: 122px;
+  right: 170px;
+}
+#draggable {
+  width: 27,8px;
+  height: 100px;
+  position: absolute;
+  cursor: grab;
+}
+
+@media screen and (max-width: 400px) {
+  .radio-panel{
+    display: none;
+  }
+}

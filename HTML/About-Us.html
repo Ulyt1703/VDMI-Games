@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playwrite+CU:100,200,300,regular" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/About-Us.css">
+</head>
+<body>
+    
+    <div class="loading">
+        <logo>
+            <img src="../img/logo.png" alt="" class="logo-loading">
+        </logo>
+        <h1 class="title__loading-developers">Developed by: Vlad, Danylo, <br> Mykhailo, Ilya</h1>
+        <h1 class="title__loading-copyright">Copyright © 2024 VDMI Games. <br> All rights reserved</h1>
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+                <div class="loader-block"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="../index.html">
+            <logo>
+                <img src="../img/logo.png" alt="" class="logo">
+            </logo>
+        </a>
+            <a href="../index.html" class="Home">Home</a>
+            <a href="../HTML/About-Us.html" class="About Us">About Us</a>
+            <a href="./Danylo.html" class="Page Danylo">Danylo's Game</a>
+            <a href="" class="Page Ilya">Ilya's Game</a>
+            <a href="" class="Page Misha">Misha's Game</a>
+            <a href="./Vladyslav.html" class="Page Vlad">Vlad's Game</a>
+    </header>
+
+    <p class="text__header-mobile">Menu</p>
+    <input class="header__mobile" type="checkbox" id="mobile">
+    <label class="header__label" for="mobile">
+        <span class="mobile-line"></span>
+    </label>
+    <nav class="nav">
+        <div class="menu">
+            <a href="../index.html">
+                <logo>
+                    <img src="../img/logo.png" alt="" class="logo-menu">
+                </logo>
+            </a>
+            <a href="../index.html" class="Home">Home</a>
+            <a href="./About-Us.html" class="About Us">About Us</a>
+            <a href="./Danylo.html" class="Page Danylo">Danylo's Game</a>
+            <a href="" class="Page Ilya">Ilya's Game</a>
+            <a href="" class="Page Misha">Misha's Game</a>
+            <a href="./Vladyslav.html" class="Page Vlad">Vlad's Game</a>
+        </div>
+    </nav>
+
+    <div class="i-title-box">
+        <h1 class="i-title" id="animatedText"></h1>
+        <div class="i-line"></div>
+    </div>
+
+<main class="main-2">
+        <div class="box-main-1" onclick="document.querySelector('.best__modal-1').showModal()">
+            <img src="../img/photo-Danylo.png" alt="" class="img-main-1">
+            <h2 class="title-main-1">Danylo Dovhopolyi</h2>
+        </div>
+        <div class="box-main-2" onclick="document.querySelector('.best__modal-2').showModal()">
+            <img src="../img/photo-Vladyslav.png" alt="" class="img-main-2">
+            <h2 class="title-main-2">Vladyslav Kolochavyn</h2>
+        </div>
+    <div class="box-main-3" onclick="document.querySelector('.best__modal-3').showModal()">
+        <img src="../img/photo-Mykhailo.png" alt="" class="img-main-3">
+        <h2 class="title-main-3">Mykhailo Yeromenko</h2>
+    </div>
+    <div class="box-main-4" onclick="document.querySelector('.best__modal-4').showModal()">
+        <img src="../img/photo-Ilya.png" alt="" class="img-main-4">
+        <h2 class="title-main-4">Ilya Ryasniy</h2>
+    </div>
+    <dialog class="best__modal-1">
+        <p class="best__modal-text-1">
+            Hello! I'm Danylo Dovhopolyi,from Dnipro, Ukraine. I am currently studying to become <br> a front-end developer at the GoIteens computer school and in the future I want to work <br> in this field. I really like programming, I love creating new projects, solving difficult problems, <br> constantly learning new things, and coming up with creative solutions. Despite my young age - <br> 15 years old, I can already create fully interactive, responsive websites. I enjoy spending time <br> outside with friends and family and interacting with people. I can speak English.
+        </p>
+        <button class="best__button-close-1" onclick="document.querySelector('.best__modal-1').close()">Close</button>
+    </dialog>
+    <dialog class="best__modal-2">
+        <p class="best__modal-text-2">
+            Hello everyone! I am Vladyslav Kolochavyn, 17 years old from Kyiv, Ukraine. Nowadays, <br> I am studying in GoIteens as a front-end developer and today you can see our latest project - <br> our website with mini video games. Although it takes quite a lot of time to learn and develop <br> new skills in IT, I am able to find some more time for my hobbies, such as reading fantasy <br> novels, going to the gym three times a week, having additional lessons of English and going <br> outside with my friends and family. I believe to be patient, hardworking and creative!
+        </p>
+        <button class="best__button-close-2" onclick="document.querySelector('.best__modal-2').close()">Close</button>
+    </dialog>
+    <dialog class="best__modal-3">
+        <p class="best__modal-text-3">
+            I was born in Mariupol - Ukraine, I like to do computer science and I love logic
+        </p>
+        <button class="best__button-close-3" onclick="document.querySelector('.best__modal-3').close()">Close</button>
+    </dialog>
+    <dialog class="best__modal-4">
+        <p class="best__modal-text-4">
+            I like to work with computers, program and spend time outside
+        </p>
+        <button class="best__button-close-4" onclick="document.querySelector('.best__modal-4').close()">Close</button>
+    </dialog>
+</main>
+
+<main class="main">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="6000">
+                <aside class="block-Danylo" id="blockDanylo">
+                    <img src="../img/photo-Danylo.png" class="img-Danylo" alt="">
+                    <h2 class="title-Danylo"><span class="I__am-Danylo">Hi, I'm</span> <br> <span class="name-Danylo">Danylo Dovhopolyi</span></h2>
+                    <h2 class="portfolio-Danylo">I'm a 
+                        <div class="i__portfolio-box">
+                            <h1 class="profession-Danylo"></h1>
+                            <div class="i__line-Danylo"></div>
+                        </div>
+                    </h2>
+                    <p class="description-Danylo">
+                        Hello! I'm Danylo Dovhopolyi,from Dnipro, Ukraine. I am currently studying to become <br> a front-end developer at the GoIteens computer school and in the future I want to work <br> in this field. I really like programming, I love creating new projects, solving difficult problems, <br> constantly learning new things, and coming up with creative solutions. Despite my young age - <br> 15 years old, I can already create fully interactive, responsive websites. I enjoy spending time <br> outside with friends and family and interacting with people. I can speak English.
+                    </p>
+                </aside>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <aside class="block-Danylo">
+                    <img src="../img/photo-Vladyslav.png" class="img-Vladyslav" alt="">
+                    <h2 class="title-Vladyslav"><span class="I__am-Vladyslav">Hi, I'm</span> <br> <span class="name-Vladyslav">Vladyslav Kolochavyn</span></h2>
+                    <h2 class="portfolio-Vladyslav">I'm a 
+                        <div class="i__portfolio-box">
+                            <h1 class="profession-Vladyslav"></h1>
+                            <div class="i__line-Vladyslav"></div>
+                        </div>
+                    </h2>
+                    <p class="description-Vladyslav">Hello everyone! I am Vladyslav Kolochavyn, 17 years old from Kyiv, Ukraine. Nowadays, <br> I am studying in GoIteens as a front-end developer and today you can see our latest project - <br> our website with mini video games. Although it takes quite a lot of time to learn and develop <br> new skills in IT, I am able to find some more time for my hobbies, such as reading fantasy <br> novels, going to the gym three times a week, having additional lessons of English and going <br> outside with my friends and family. I believe to be patient, hardworking and creative!</p>
+                </aside>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <aside class="block-Danylo">
+                    <img src="../img/photo-Mykhailo.png" class="img-Mykhailo" alt="">
+                    <h2 class="title-Mykhailo"><span class="I__am-Mykhailo">Hi, I'm</span> <br> <span class="name-Vladyslav">Mykhailo</span></h2>
+                    <h2 class="portfolio-Mykhailo">I'm a 
+                        <div class="i__portfolio-box">
+                            <h1 class="profession-Mykhailo"></h1>
+                            <div class="i__line-Mykhailo"></div>
+                        </div>
+                    </h2>
+                    <p class="description-Mykhailo">
+                        I was born in Mariupol - Ukraine, I like to do computer science and I love logic
+                    </p>
+                </aside>
+            </div>
+            <div class="carousel-item">
+                <aside class="block-Danylo">
+                    <img src="../img/photo-Ilya.png" class="img-Ilya" alt="">
+                    <h2 class="title-Ilya"><span class="I__am-Ilya">Hi, I'm</span> <br> <span class="name-Vladyslav">Ilya</span></h2>
+                    <h2 class="portfolio-Ilya">I'm a 
+                        <div class="i__portfolio-box">
+                            <h1 class="profession-Ilya"></h1>
+                            <div class="i__line-Ilya"></div>
+                        </div>
+                    </h2>
+                    <p class="description-Ilya">
+                        I like to work with computers, program and spend time outside
+                    </p>
+                </aside>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../JavaScript/About-Us.js"></script>
+</body>
+</html>

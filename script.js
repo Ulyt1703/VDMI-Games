@@ -19,79 +19,71 @@ window.addEventListener("load", function() {
     },900)
 })
 
-
 let information = [
-    {
-        title: "Danylo Game",
-        url: "./img/Nature-1.jpg",
-        alt: ""
-    },
-    {
-        title: "Ilya's Game",
-        url: "./img/Nature-2.jpg",
-        alt: ""
-    },
-    {
-        title: "Misha's Game",
-        url: "./img/Nature-3.jpg",
-        alt: ""
-    },
-    {
-        title: "Vlad's Game",
-        url: "./img/Nature-4.jpg",
-        alt: ""
-    }
+    {text: "Questions? Need help? You can contact our "},
+    {text: "support team at: "},
+    {text: "+380508765434 or by e-mail: "},
+    {text: "VDMIGames@gmail.com"}
 ]
 
 let[
-    {
-        title: title1,
-        url: url1,
-        alt: alt1
-    },
-    {
-        title: title2,
-        url: url2,
-        alt: alt2
-    },
-    {
-        title: title3,
-        url: url3,
-        alt: alt3
-    },
-    {
-        title: title4,
-        url: url4,
-        alt: alt4
-    }
+    {text: text1},
+    {text: text2},
+    {text: text3},
+    {text: text4}
 ] = information
 
-let main = document.querySelector(".main")
-/* let main = document.querySelector(".main")
 function getInfo(information){
     information.forEach(info => {
-        main.innerHTML = `
-            <a href=".HTML/Danylo.html">
-                <div class="box-main-1">
-                    <img src="${url1}" alt="" class="img-main-1">
-                    <h2 class="title-main-1">${title1}</h2>
-                </div>
-            </a>
-            <a href=".HTML/DanyloSecondGame.html">
-                <div class="box-main-2">
-                    <img src="${url2}" alt="" class="img-main-2">
-                    <h2 class="title-main-2">${title2}</h2>
-                </div>
-            </a>
-            <div class="box-main-3">
-                <img src="${url3}" alt="" class="img-main-3">
-                <h2 class="title-main-3">${title3}</h2>
-            </div>
-            <div class="box-main-4">
-                <img src="${url4}" alt="" class="img-main-4">
-                <h2 class="title-main-4">${title4}</h2>
-            </div>
+        footerHome.innerHTML = `
+            <p class="description-footer">${text1}<br>${text2}<br>${text3}<br>
+            ${text4}</p>
         `
     })
 }
-getInfo(information) */
+getInfo(information)
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let animatedTitleHome = document.getElementById("animated__title-home")
+    let wordsHome = ["Lots of modern games", "We create interactive, immersive games"]
+    let currentWordIndex = 0
+    let currentIndex = 0
+    let isDeleting = false
+
+    function animateText() {
+        let currentText = wordsHome[currentWordIndex].slice(0, currentIndex)
+        animatedTitleHome.textContent = currentText
+
+        if (!isDeleting) {
+            currentIndex++
+
+        if (currentIndex > wordsHome[currentWordIndex].length) {
+            isDeleting = true
+            currentIndex = wordsHome[currentWordIndex].length - 1
+            setTimeout(animateText, 1100)
+        } 
+        else {
+            setTimeout(animateText, 60)
+        }
+        } 
+        else {
+            currentIndex--
+
+        if (currentIndex === 0) {
+            isDeleting = false
+            currentWordIndex = (currentWordIndex + 1) % wordsHome.length
+            setTimeout(animateText, 600)
+        } 
+        else {
+            setTimeout(animateText, 40)
+        }
+    }
+    }
+
+    setTimeout(function() {
+        animatedTitleHome.classList.remove("hidden")
+        animateText()
+    }, 950)
+})
